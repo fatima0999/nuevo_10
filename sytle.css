@@ -1,0 +1,85 @@
+* {
+  margin: 0;              /* Establece el margen de todos los elementos en 0. */
+  padding: 0;             /* Establece el relleno de todos los elementos en 0. */
+  box-sizing: border-box; /* Establece el modelo de caja de todos los elementos en "border-box", lo que significa que el ancho y la altura de un elemento incluirán el relleno y el borde, pero no el margen exterior. */
+}
+
+.rectangulo{
+  background-color: rgb(222, 135, 195);
+  /* Establece el ancho de todas las imágenes en 250 píxeles.*/
+  width: 100px;
+  /*Establece la altura de todas las imágenes*/
+  height: 150px;
+  /*El borde del rectángulo es de estilo sólido.*/
+  /*El rectángulo se muestra como un bloque.*/
+position: absolute;
+transform: translate(-50%,-50%);
+margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.triangulo{
+  /* Establece el ancho de todas las imágenes.*/
+  width: 0;
+  /*Establece la altura de todas las imágenes*/
+  height: 0;
+  /*Se utiliza la propiedad "border" para definir los lados del triángulo.*/
+  border-left: 60px solid transparent;
+  /*El lado superior del triángulo tiene un ancho de 0.*/
+  border-right: 70px solid transparent;
+  /*El lado inferior del triángulo tiene un ancho de 150 píxeles y un color de fondo especificado como rgb(222, 135, 195).*/
+  border-bottom: 150px solid rgb(206, 28, 72);
+  /*El triángulo se centra horizontalmente en la página utilizando márgenes automáticos tanto a la derecha como a la izquierda.*/
+  /*El triángulo se muestra como un bloque.*/
+  display: block; /* Establece el elemento como un bloque, lo que significa que ocupará todo el ancho disponible en su contenedor y comenzará en una nueva línea. */
+  position: absolute; /* Posiciona el elemento de forma absoluta con respecto a su primer padre posicionado. */
+  top: 50%; /* Establece la distancia del elemento con respecto al borde superior de su contenedor, posicionándolo en el 50% de la altura del contenedor. */
+  left: 50%; /* Establece la distancia del elemento con respecto al borde izquierdo de su contenedor, posicionándolo en el 50% del ancho del contenedor. */
+  transform: translate(-50%,-50%); /* Aplica una transformación de traslación que desplaza el elemento en sentido contrario al 50% de su propio ancho y alto, logrando así un centrado perfecto tanto horizontal como verticalmente. */
+
+  
+}
+.triangulo2{
+  /* Establece el ancho de todas las imágenes.*/
+  width:0;
+  /*Establece la altura de todas las imágenes*/
+  height: 0;
+  /*Se utiliza la propiedad "border" para definir los lados del triángulo.*/
+  border-left: 80px solid transparent;
+  /*El lado superior del triángulo tiene un ancho de 0.*/
+  border-right: 70px solid transparent;
+  /*El lado inferior del triángulo tiene un ancho de 150 píxeles y un color de fondo especificado como rgb(222, 135, 195).*/
+  border-bottom: 100px solid rgb(222, 135, 195);
+  /*El triángulo se centra horizontalmente en la página utilizando márgenes automáticos tanto a la derecha como a la izquierda.*/
+  /*El triángulo se muestra como un bloque.*/
+  display: block; /* Establece el elemento como un bloque, lo que significa que ocupará todo el ancho disponible en su contenedor y comenzará en una nueva línea. */
+  position: absolute; /* Posiciona el elemento de forma absoluta con respecto a su primer padre posicionado. */
+  margin-right: auto; /* Establece un margen derecho automático, lo que significa que el espacio entre el elemento y su contenedor se distribuirá automáticamente. */
+  margin-left: auto; /* Establece un margen izquierdo automático, similar al margen derecho, para centrar horizontalmente el elemento dentro de su contenedor. */
+  transform: translate(-50%,-50%); /* Aplica una transformación de traslación que desplaza el elemento en sentido contrario al 50% de su propio ancho y alto, logrando así un centrado perfecto tanto horizontal como verticalmente. */
+  display: block; /* Esta propiedad se repite innecesariamente. No es necesario establecer display: block; dos veces para el mismo elemento. */
+  position: absolute; /* Esta propiedad se repite innecesariamente. La posición absoluta ya se había establecido anteriormente y no es necesario volver a declararla. */
+  top: 25%; /* Establece la distancia del elemento con respecto al borde superior de su contenedor, posicionándolo en el 25% del alto del contenedor. */
+  left: 49%; /* Establece la distancia del elemento con respecto al borde izquierdo de su contenedor, posicionándolo en el 49% del ancho del contenedor. */
+  
+}
+.circulo{
+  /* Establece el ancho de todas las imágenes en 250 píxeles.*/
+  width: 50px;
+  /*Establece la altura de todas las imágenes*/
+  height: 50px;
+  /*Establece el radio de las esquinas de todas las imágenes en 30 píxeles, lo que crea un efecto de borde redondeado.*/
+  border-radius: 50%;
+  /*Parece que falta un valor para esta propiedad. Deberías especificar un color en hexadecimal, RGB, RGBA, HSL, HSLA, o utilizando palabras clave como "red", "blue", etc.*/
+  background-color: blue;
+  /* Establece el estilo de borde de los elementos con la clase */
+  border-style: solid;
+  /* Agrega un margen de 10 píxeles en la parte inferior del elemento.*/
+  margin-bottom: 10px;
+  display: block;
+  /*Al igual que el valor anterior, parece ser un valor de margen inusual sin una unidad de medida específica. Además, usar un valor negativo (-10cap) podría tener un efecto impredecible y no deseado.*/
+  margin-left: auto;
+  /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+  margin-right: auto;
+}
